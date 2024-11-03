@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.contenedor {
+  display: flex;
+  gap: 20px;
+}
+
+.controles {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.previsualizacion-camiseta {
+  position: relative;
+  width: 600px;
+  height: 700px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+#texto-camiseta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el texto */
+  font-size: 30px;
+  color: rgb(99, 172, 246);
+  font-family: 'Adventure Time';
+  
+}
+
+#imagen-centro, #imagen-pecho {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#imagen-centro {
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%); /* Centra la imagen */
+  width: 200px;
+  height: 230px;
+}
+
+
+#imagen-pecho {
+  position: absolute;
+  top: 30%; 
+  left: 40%; 
+  width: 30%; 
+  height: 12%; 
+  transform: scaleX(-1); /* Invierte la imagen horizontalmente */
+}
+
+
+
+.galeria-imagenes img {
+  width: 90px;
+  height: auto;
+  margin: 5px;
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+}

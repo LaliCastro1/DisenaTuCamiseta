@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tu camiseta</title>
+    <link rel="stylesheet" href="./Camiseta.css">
+</head>
+<body>
+    <h1>Crea tu camiseta</h1>
+    <div class="contenedor">
+      <div class="controles">
+        <!-- Input para el título -->
+        <label for="titulo">Título</label>
+        <input type="text" id="titulo" placeholder="Escribe tu título">
+        <div id="mensajeError" style="color: red; display: none;"></div>
+        
+  
+        <!-- Sliders para posición del texto -->
+        <label for="posX">Posición X</label>
+        <input type="range" id="posX" min="0" max="100" value="50">
+        <label for="posY">Posición Y</label>
+        <input type="range" id="posY" min="0" max="100" value="50">
+  
+        <!-- Selector de color de camiseta -->
+        <label>Color</label>
+        <input type="radio" name="color" id="negro" value="black" checked>
+        <label for="negro">Negro</label>
+        <input type="radio" name="color" id="blanco" value="white">
+        <label for="blanco">Blanco</label>
+  
+        <!-- Galería de imágenes para arrastrar -->
+        <div class="galeria-imagenes">
+          <p>Imágenes (arrastra a la camiseta)</p>
+          <img src="./img/disenos/BMO.png" alt="Personaje 1" class="arrastrable" id="personaje1">
+          <img src="./img/disenos/finyjake.png" alt="Personaje 2" class="arrastrable" id="personaje2">
+          <img src="./img/disenos/marcelin.png" alt="Personaje 3" class="arrastrable" id="personaje3">
+          <img src="./img/disenos/princesabulto.png" alt="Personaje 4" class="arrastrable" id="personaje4">
+        </div>
+      </div>
+  
+      <!-- Camiseta para previsualizar -->
+      <div class="previsualizacion-camiseta" id="previsualizacion-camiseta">
+        <div id="texto-camiseta">Título</div>
+        <div id="imagen-centro"></div>
+        <div id="imagen-pecho"></div>
+      </div>
+    </div>
+  
+    <script src="./Camiseta.js"></script>
+</body>
+</html>
